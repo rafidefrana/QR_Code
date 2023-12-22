@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Latihan API dari youtube" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
     <title>QR CODE</title>
@@ -22,6 +25,24 @@
         </div>
         <div class="qr-code">
           <img src="" alt="qr-code" />
+        </div>
+      </div>
+
+      <div class="wrapper-scanner">
+        <form action="#">
+          <input type="file" hidden />
+          <img src="" id="qr-code-scanner" alt="qr-code" />
+          <div class="content">
+            <i class="bi bi-cloud-arrow-up-fill"></i>
+            <p>Upload QR Code to Scan</p>
+          </div>
+        </form>
+        <div class="details">
+          <textarea disabled></textarea>
+          <div class="buttons">
+            <button class="close">Close</button>
+            <button class="copy">Copy Text</button>
+          </div>
         </div>
       </div>
     </section>
